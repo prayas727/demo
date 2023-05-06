@@ -41,11 +41,7 @@ public class EnquiryController {
 		return "index";
 	}
 
-	@GetMapping("/viewEnquiry")
-	public String viewEnquiry() {
-		httpSession.invalidate();
-		return "view-enquiries";
-	}
+	
 
 	@GetMapping("/addEnquiry")
 	public String addEnquiry(Model model) {
